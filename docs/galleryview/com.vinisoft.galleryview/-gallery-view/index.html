@@ -1,0 +1,83 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>GalleryView - galleryview</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">galleryview</a>&nbsp;/&nbsp;<a href="../index.html">com.vinisoft.galleryview</a>&nbsp;/&nbsp;<a href=".">GalleryView</a><br/>
+<br/>
+<h1>GalleryView</h1>
+<code><span class="keyword">class </span><span class="identifier">GalleryView</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">LinearLayout</span></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">GalleryView</span><span class="symbol">(</span><span class="identifier" id="com.vinisoft.galleryview.GalleryView$<init>(android.content.Context, android.util.AttributeSet, kotlin.Int)/context">context</span><span class="symbol">:</span>&nbsp;<span class="identifier">Context</span><span class="symbol">, </span><span class="identifier" id="com.vinisoft.galleryview.GalleryView$<init>(android.content.Context, android.util.AttributeSet, kotlin.Int)/attributeSet">attributeSet</span><span class="symbol">:</span>&nbsp;<span class="identifier">AttributeSet</span><span class="symbol">?</span>&nbsp;<span class="symbol">=</span>&nbsp;null<span class="symbol">, </span><span class="identifier" id="com.vinisoft.galleryview.GalleryView$<init>(android.content.Context, android.util.AttributeSet, kotlin.Int)/defStyle">defStyle</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a>&nbsp;<span class="symbol">=</span>&nbsp;-1<span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="add-provider.html">addProvider</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">addProvider</span><span class="symbol">(</span><span class="identifier" id="com.vinisoft.galleryview.GalleryView$addProvider(com.vinisoft.galleryview.provider.base.BaseImageProvider)/provider">provider</span><span class="symbol">:</span>&nbsp;<a href="../../com.vinisoft.galleryview.provider.base/-base-image-provider/index.html"><span class="identifier">BaseImageProvider</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Adds an image provider to the available provider list.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="enable-deleting-with-action-mode.html">enableDeletingWithActionMode</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">enableDeletingWithActionMode</span><span class="symbol">(</span><span class="identifier" id="com.vinisoft.galleryview.GalleryView$enableDeletingWithActionMode(android.support.v7.widget.Toolbar)/toolbar">toolbar</span><span class="symbol">:</span>&nbsp;<span class="identifier">Toolbar</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Enables deleting with toolbar action mode.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="get-selected-images.html">getSelectedImages</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">getSelectedImages</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="../-gallery-image/index.html"><span class="identifier">GalleryImage</span></a><span class="symbol">&gt;</span></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="on-activity-result.html">onActivityResult</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onActivityResult</span><span class="symbol">(</span><span class="identifier" id="com.vinisoft.galleryview.GalleryView$onActivityResult(kotlin.Int, kotlin.Int, android.content.Intent)/requestCode">requestCode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.vinisoft.galleryview.GalleryView$onActivityResult(kotlin.Int, kotlin.Int, android.content.Intent)/resultCode">resultCode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.vinisoft.galleryview.GalleryView$onActivityResult(kotlin.Int, kotlin.Int, android.content.Intent)/data">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">Intent</span><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Should be called from activity to handle image picker result.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-request-permission-result.html">onRequestPermissionResult</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onRequestPermissionResult</span><span class="symbol">(</span><span class="identifier" id="com.vinisoft.galleryview.GalleryView$onRequestPermissionResult(kotlin.Int, kotlin.Array((kotlin.String)), kotlin.IntArray)/requestCode">requestCode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.vinisoft.galleryview.GalleryView$onRequestPermissionResult(kotlin.Int, kotlin.Array((kotlin.String)), kotlin.IntArray)/permissions">permissions</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">?</span><span class="symbol">, </span><span class="identifier" id="com.vinisoft.galleryview.GalleryView$onRequestPermissionResult(kotlin.Int, kotlin.Array((kotlin.String)), kotlin.IntArray)/grantResults">grantResults</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html"><span class="identifier">IntArray</span></a><span class="symbol">?</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Should be called from activity to handle permissions result.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="set-images.html">setImages</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">setImages</span><span class="symbol">(</span><span class="identifier" id="com.vinisoft.galleryview.GalleryView$setImages(kotlin.collections.List((android.net.Uri)))/uris">uris</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><span class="identifier">Uri</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Sync items in gallery.
+and shows the new one.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

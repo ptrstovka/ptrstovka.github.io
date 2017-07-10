@@ -1,0 +1,154 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>BaseActivityProvider - galleryview</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">galleryview</a>&nbsp;/&nbsp;<a href="../index.html">com.vinisoft.galleryview.provider.base</a>&nbsp;/&nbsp;<a href=".">BaseActivityProvider</a><br/>
+<br/>
+<h1>BaseActivityProvider</h1>
+<code><span class="keyword">abstract</span> <span class="keyword">class </span><span class="identifier">BaseActivityProvider</span>&nbsp;<span class="symbol">:</span>&nbsp;<a href="../-base-image-provider/index.html"><span class="identifier">BaseImageProvider</span></a></code>
+<h3>Constructors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="-init-.html">&lt;init&gt;</a></p>
+</td>
+<td>
+<code><span class="identifier">BaseActivityProvider</span><span class="symbol">(</span><span class="identifier" id="com.vinisoft.galleryview.provider.base.BaseActivityProvider$<init>(android.app.Activity)/activity">activity</span><span class="symbol">:</span>&nbsp;<span class="identifier">Activity</span><span class="symbol">)</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="activity.html">activity</a></p>
+</td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">activity</span><span class="symbol">: </span><span class="identifier">Activity</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../-base-image-provider/galler-provider-contract.html">gallerProviderContract</a></p>
+</td>
+<td>
+<code><span class="keyword">var </span><span class="identifier">gallerProviderContract</span><span class="symbol">: </span><a href="../../com.vinisoft.galleryview.internal/-gallery-provider-contract/index.html"><span class="identifier">GalleryProviderContract</span></a><span class="symbol">?</span></code></td>
+</tr>
+</tbody>
+</table>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="on-activity-result.html">onActivityResult</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onActivityResult</span><span class="symbol">(</span><span class="identifier" id="com.vinisoft.galleryview.provider.base.BaseActivityProvider$onActivityResult(kotlin.Int, kotlin.Int, android.content.Intent)/requestCode">requestCode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.vinisoft.galleryview.provider.base.BaseActivityProvider$onActivityResult(kotlin.Int, kotlin.Int, android.content.Intent)/resultCode">resultCode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.vinisoft.galleryview.provider.base.BaseActivityProvider$onActivityResult(kotlin.Int, kotlin.Int, android.content.Intent)/data">data</span><span class="symbol">:</span>&nbsp;<span class="identifier">Intent</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Called when activity handles result. This is called automatically
+by the GallerView on each provider.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="on-permission-result.html">onPermissionResult</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">onPermissionResult</span><span class="symbol">(</span><span class="identifier" id="com.vinisoft.galleryview.provider.base.BaseActivityProvider$onPermissionResult(kotlin.Int, kotlin.Array((kotlin.String)), kotlin.IntArray)/requestCode">requestCode</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.vinisoft.galleryview.provider.base.BaseActivityProvider$onPermissionResult(kotlin.Int, kotlin.Array((kotlin.String)), kotlin.IntArray)/permissions">permissions</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html"><span class="identifier">Array</span></a><span class="symbol">&lt;</span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a><span class="symbol">&gt;</span><span class="symbol">, </span><span class="identifier" id="com.vinisoft.galleryview.provider.base.BaseActivityProvider$onPermissionResult(kotlin.Int, kotlin.Array((kotlin.String)), kotlin.IntArray)/grantResults">grantResults</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int-array/index.html"><span class="identifier">IntArray</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Called when activity handles permissions result. This is called
+automatically by the GalleryView on each provider.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Inherited Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../-base-image-provider/create-image.html">createImage</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">createImage</span><span class="symbol">(</span><span class="identifier" id="com.vinisoft.galleryview.provider.base.BaseImageProvider$createImage(android.net.Uri, android.net.Uri, android.net.Uri, kotlin.Int, kotlin.Int)/originalPath">originalPath</span><span class="symbol">:</span>&nbsp;<span class="identifier">Uri</span><span class="symbol">, </span><span class="identifier" id="com.vinisoft.galleryview.provider.base.BaseImageProvider$createImage(android.net.Uri, android.net.Uri, android.net.Uri, kotlin.Int, kotlin.Int)/thumbinalPath">thumbinalPath</span><span class="symbol">:</span>&nbsp;<span class="identifier">Uri</span><span class="symbol">, </span><span class="identifier" id="com.vinisoft.galleryview.provider.base.BaseImageProvider$createImage(android.net.Uri, android.net.Uri, android.net.Uri, kotlin.Int, kotlin.Int)/thumbinalSmallPath">thumbinalSmallPath</span><span class="symbol">:</span>&nbsp;<span class="identifier">Uri</span><span class="symbol">, </span><span class="identifier" id="com.vinisoft.galleryview.provider.base.BaseImageProvider$createImage(android.net.Uri, android.net.Uri, android.net.Uri, kotlin.Int, kotlin.Int)/width">width</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">, </span><span class="identifier" id="com.vinisoft.galleryview.provider.base.BaseImageProvider$createImage(android.net.Uri, android.net.Uri, android.net.Uri, kotlin.Int, kotlin.Int)/height">height</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="../../com.vinisoft.galleryview/-gallery-image/index.html"><span class="identifier">GalleryImage</span></a></code>
+<p>Creates new instance of GalleryImage.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-base-image-provider/get-provider-icon.html">getProviderIcon</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getProviderIcon</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html"><span class="identifier">Int</span></a></code>
+<p>Should return provider icon resource, which will be displayed in provider selection.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-base-image-provider/get-provider-title.html">getProviderTitle</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">getProviderTitle</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html"><span class="identifier">String</span></a></code>
+<p>Should return provider title, which will be displayed in provider selection.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../-base-image-provider/on-image-selected.html">onImageSelected</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onImageSelected</span><span class="symbol">(</span><span class="identifier" id="com.vinisoft.galleryview.provider.base.BaseImageProvider$onImageSelected(com.vinisoft.galleryview.GalleryImage)/image">image</span><span class="symbol">:</span>&nbsp;<a href="../../com.vinisoft.galleryview/-gallery-image/index.html"><span class="identifier">GalleryImage</span></a><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-base-image-provider/on-images-selected.html">onImagesSelected</a></p>
+</td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">onImagesSelected</span><span class="symbol">(</span><span class="identifier" id="com.vinisoft.galleryview.provider.base.BaseImageProvider$onImagesSelected(kotlin.collections.List((com.vinisoft.galleryview.GalleryImage)))/images">images</span><span class="symbol">:</span>&nbsp;<a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html"><span class="identifier">List</span></a><span class="symbol">&lt;</span><a href="../../com.vinisoft.galleryview/-gallery-image/index.html"><span class="identifier">GalleryImage</span></a><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code></td>
+</tr>
+<tr>
+<td>
+<p><a href="../-base-image-provider/start-provider.html">startProvider</a></p>
+</td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">startProvider</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-unit/index.html"><span class="identifier">Unit</span></a></code>
+<p>Called when provider is selected from providers menu.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<p><a href="../../com.vinisoft.galleryview.provider/-camera-image-provider/index.html">CameraImageProvider</a></p>
+</td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">CameraImageProvider</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">BaseActivityProvider</span></code>
+<p>Created by: Peter Štovka &lt;&gt;
+Created at: 6/5/17.</p>
+</td>
+</tr>
+<tr>
+<td>
+<p><a href="../../com.vinisoft.galleryview.provider/-file-image-provider/index.html">FileImageProvider</a></p>
+</td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">class </span><span class="identifier">FileImageProvider</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">BaseActivityProvider</span></code>
+<p>Created by: Peter Štovka &lt;&gt;
+Created at: 6/2/17.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
